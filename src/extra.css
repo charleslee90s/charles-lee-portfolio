@@ -1,0 +1,8 @@
+.visual-ai{background:radial-gradient(circle at 50% 50%,#194754,#091d27 70%);gap:8px;padding:20px}
+.flow-node{z-index:1;flex:0 0 auto;border:1px solid #75c8b3;color:#b8f5df;font-family:"DM Mono",monospace;font-size:.65rem;letter-spacing:.07em;padding:14px 10px;box-shadow:0 0 20px #b8f5df15}
+.central-node{background:#b8f5df;color:#07121b;box-shadow:0 0 40px #b8f5df5a;animation:flowbeat 2s ease-in-out infinite}
+.flow-line{height:1px;flex:1;min-width:12px;background:linear-gradient(90deg,transparent,#b8f5df,transparent);background-size:200% 100%;animation:flowmove 1.5s linear infinite}
+@keyframes flowmove{to{background-position:-200% 0}}
+@keyframes flowbeat{50%{transform:scale(1.09)}}
+@media(max-width:650px){.flow-node{font-size:.54rem;padding:12px 7px}.visual-ai{gap:4px;padding:10px}}
+@media(prefers-reduced-motion:reduce){.central-node,.flow-line{animation:none}}
